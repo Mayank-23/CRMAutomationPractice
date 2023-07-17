@@ -18,7 +18,6 @@ import base.BaseTest;
 public class SuiteListener implements ITestListener, IAnnotationTransformer {
 
 	public void onTestFailure(ITestResult result) {
-		System.out.println("Checlll");
 		String filename = System.getProperty("user.dir")+File.separator+"screenshots"+File.separator+result.getMethod().getMethodName();
 		File f1 = ((TakesScreenshot)BaseTest.driver).getScreenshotAs(OutputType.FILE);
 		try {
