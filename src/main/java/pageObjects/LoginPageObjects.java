@@ -1,5 +1,12 @@
 package pageObjects;
 
-public interface LoginPageObjects {
+import utils.ElementFetch;
+
+public class LoginPageObjects {
+	
+	ElementFetch el = new ElementFetch();
+	public void verifyIfLoginPageisLoaded() {
+		
+	}
 
 }
