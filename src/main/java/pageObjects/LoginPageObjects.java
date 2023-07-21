@@ -1,12 +1,10 @@
 package pageObjects;
 
-import utils.ElementFetch;
 
-public class LoginPageObjects {
+public interface LoginPageObjects {
 	
-	ElementFetch el = new ElementFetch();
-	public void verifyIfLoginPageisLoaded() {
-		
-	}
+	String loginText = "//div[text()='Login']";
+	String email = "//input[@placeholder='Email']";
+	String password = "//input[@placeholder='Password']";
 
 }
